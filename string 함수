@@ -1,0 +1,15 @@
+string s;
+s.substr( i , n ) // s[i]부터 n개 까지 추출
+s.replace( i , n , "string") // s[i]부터 n개까지 "string"으로 바꿈(char형은 올수없다)
+s.find( ch ); //ch를 찾아 그 위치를 반환
+s.pop_back() //문자열에서 가장 뒤의 문자 하나를 뺌
+s.push_back( ' x ' )//문자열의 가장 뒤에 문자 하나를 추가
+s.size(), s.length() //문자열의 크기
+s.c_str() //string
+getline(cin ,s ,'\n');
+reverse(s.begin(), s.end()); // "cba" 출력
+
+
+char *str과
+char str[] 의 차이:
+char *str은 수정이 불가함
