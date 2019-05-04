@@ -1,0 +1,24 @@
+int &r = a; // r은 a와 같음. r은 int형 변수를 가르켜야 하므로 int형 변수가 옴
+
+int *p = &a;
+int* (&r) = p; // int형 포인터를 가르켜야 하는데 p가 포인터이므로. r = p.
+r = &a; // r은 p이므로 a의 주솟값이 옴
+*r = 60; // *p = 60과 같음
+
+참조변수는 원본변수의 주소를 공유
+char c='a';
+char v ( ){ 
+    return c;
+}
+char &r ( ){ //c의 참조 리턴
+    return c;
+}
+char *p() {//c의 주소값 리턴
+       return &c;
+}
+char* ptr = *p( );//ptr = &c;
+v( ) = 'c'  X ( v( ) = Rvalue)
+*ptr = 'b';  O
+*p()='c';  O
+r()='b';  O
+
