@@ -1,0 +1,17 @@
+for each
+vector<int>arr;
+  arr = { 1,2,3,4,5,6 };
+  for (int num : arr)// arr의 원소가 num에 순서대로 들어감
+              cout << num;
+              
+다차원 배열 초기화
+ int arr[3][3]= { { 1,2,3}, {2,3,4}, {3,4,5} } 대괄호 안에 대괄호
+ 
+ 파라미터
+     매개변수로 const & 상수 참조를 넣으면
+    매개변수로 포인터를 받을때에 복사가 안일어나며
+    원래 인자를 변경하지 못하게 막는다
+
+void printlength(const array<int,5> &arr){
+    cout<<arr.size();
+}
