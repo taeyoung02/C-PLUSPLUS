@@ -1,0 +1,7 @@
+      
+    #include<time.h>
+       clock_t start, end; double result;
+       start = clock();
+    
+       result = (double)(end - start); 
+       cout << "result : " << ((result) / CLOCKS_PER_SEC) << " seconds" << endl;
