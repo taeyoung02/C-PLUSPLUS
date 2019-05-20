@@ -1,0 +1,6 @@
+const char* pstr = "very nice";
+              while (*pstr) {
+                     if (*pstr == 'v')
+                           cout << "find" << endl;
+                     *pstr++;
+              }
