@@ -1,0 +1,45 @@
+2개의 멤버를 저장할때
+vector<pair<int,int>> arr;
+arr[i].first : 첫번째 우선순위
+arr[i].second : 두번째 우선순위
+	* 
+벡터 예시
+
+
+vector<pair<int, int>> a(3);
+       a[1].first = 1;
+       a.push_back(pair<int,int>(3,4));
+3개 이상
+tuple : 사물의 순서를 뜻함
+tuple<int, char, string> tupleValue(10,x,"string"); //tuple 선언
+auto typleValue = std::make_tuple(10, 'x', "string"); //make_tuple : 튜플을 만들어주는 함수
+vector<tuple<int, char, double>> tup;//배열으로 표현
+make_tuple 튜플을 만드는 함수
+get 튜플로부터 값을 가져오는 함수
+
+	* 
+배열예시
+
+
+tuple<int, char, string> arr[10];
+arr[0] = { 10,'d',"fea" };
+cout << get<0>(arr[0]) << get<2>(arr[0]);
+
+	* 
+벡터 예시
+
+
+vector<tuple<int, char, string>> arr(2);
+for (auto i : arr)cout << get<2>(i) << '\n';
+
+	* 
+입력 및 출력
+
+
+vector<tuple<int, char, string>> arr(2);
+       int a = 3; char b = 3; string c = "aE";
+       cin >> a >> b >> c;
+       arr.push_back(tuple<int, char, string>(a, b, c));
+       cout << get<0>(arr[0]) << get<2>(arr[0]);
+       for (auto i : arr)cout << get<2>(i) << '\n';
+
