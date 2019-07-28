@@ -1,0 +1,4 @@
+atoi // string을 int로
+  ex)string a; int num;
+     num = atoi(a.c_str());
+to_string(i) // int를 string
